@@ -50,7 +50,7 @@ export default function PeoplePopUp(props: { people: string }) {
                 <div className="people-popup__images">
                     {(currentPeopleDict?.images ?? []).map((img) => <img src={img}/>)}
                 </div>
-                <div className="people-popup__youtube" dangerouslySetInnerHTML={{__html: currentPeopleDict['youtube'] || ''}}></div>
+                <div className="people-popup__youtube" hidden={!currentPeopleDict['youtube']} dangerouslySetInnerHTML={{__html: currentPeopleDict['youtube'] || ''}}></div>
             </div>
         </div>
     )

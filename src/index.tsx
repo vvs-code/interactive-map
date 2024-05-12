@@ -21,7 +21,7 @@ export const GlobalContext = createContext({
     setGlobalCurrentPeople: (val: string) => {},
 });
 
-function GlobalContextProvider({ children }) {
+function GlobalContextProvider(props: { children?: any }) {
     const [loaded, setLoaded] = useState(false);
     const [regionsDict, setRegionsDict] = useState({});
     const [peoplesDict, setPeoplesDict] = useState({});
@@ -62,7 +62,7 @@ function GlobalContextProvider({ children }) {
 
     return (
         <GlobalContext.Provider value={{ loaded, regionsDict, peoplesDict, populationDict, currentRegion, currentPeople, setGlobalCurrentRegion, setGlobalCurrentPeople }}>
-            {children}
+            {props.children}
         </GlobalContext.Provider>
     )
 }
