@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=Unbounded:wght@200..900&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none !important;
+}
+
+body {
+  #textfont();
+  font-size: 16px;
+  line-height: 1.3em;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+#nicefont() {
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#textfont() {
+  font-family: "Carlito", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+#reset-link() {
+  text-decoration: none;
+  color: #000;
+}
+
+#text-icon() {
+  font-size: 1.1em !important;
+  font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24 !important;
+  vertical-align: -0.23em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  #nicefont();
+  line-height: 1.3em;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+          'FILL' 0,
+          'wght' 500,
+          'GRAD' 0,
+          'opsz' 24
+}
+
+.center-title {
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.link {
+  color: #5493e4;
+  text-decoration: none;
+  cursor: pointer;
+
+  svg {
+    fill: #5493e4;
+  }
+
+  &:hover {
+    color: #3573c4;
+
+    svg {
+      fill: #3573c4;
+    }
+  }
+
+  .arrow {
+    height: 0.8em;
+  }
+}
+
+.text-link {
+  .link;
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    border-bottom: 1px solid #a8ceff;
+  }
+}
+
+.main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.main-wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: #ddd;
+  overflow: hidden;
+}
+
+img {
+  user-select: none;
+  pointer-events: none;
+}
+
+@import "map";
+@import "region";
+@import "people";

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Интерактивная карта</title>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <noscript>
+        <style>
+            body {
+                overflow: hidden;
+            }
+        </style>
+        <div class="no-js">
+            <span>Пожалуйста, включите JavaScript в браузере.</span>
+        </div>
+    </noscript>
+
+    <div class="main">
+
+    </div>
+
+    <div class="ie-message" hidden>
+        <p>Вы используете устаревший браузер. Некоторые элементы сайта могут отображаться некорректно.</p>
+        <button class="close" onclick="document.querySelector('.ie-message').hidden = true; localStorage['ie'] = 1">Закрыть</button>
+    </div>
+
+    <script>
+        if (document.documentMode && !+localStorage['ie']) {
+            document.querySelector('.ie-message').hidden = false;
+            localStorage['ie'] = 0;
+        }
+    </script>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,348 @@
+{
+  "Gorno-Altay": {
+    "name": "Республика Алтай",
+    "peoples": []
+  },
+  "Pskov": {
+    "name": "Псковская область",
+    "peoples": []
+  },
+  "Krasnodar": {
+    "name": "Краснодарский край",
+    "peoples": []
+  },
+  "Karachay-Cherkess": {
+    "name": "Карачаево-Черкесская Республика",
+    "peoples": []
+  },
+  "Kabardin-Balkar": {
+    "name": "Кабардино-Балкарская Республика",
+    "peoples": []
+  },
+  "NorthOsetia": {
+    "name": "Республика Северная Осетия — Алания",
+    "peoples": []
+  },
+  "Ingush": {
+    "name": "Республика Ингушетия",
+    "peoples": []
+  },
+  "Chechnya": {
+    "name": "Чеченская республика",
+    "peoples": []
+  },
+  "Dagestan": {
+    "name": "Республика Дагестан",
+    "peoples": []
+  },
+  "Murmansk": {
+    "name": "Мурманская область",
+    "peoples": []
+  },
+  "Karelia": {
+    "name": "Республика Карелия",
+    "peoples": []
+  },
+  "Leningrad": {
+    "name": "Ленинградская область",
+    "peoples": [
+      "Крутышки"
+    ]
+  },
+  "Kaliningrad": {
+    "name": "Калининградская область",
+    "peoples": []
+  },
+  "Smolensk": {
+    "name": "Смоленская область",
+    "peoples": []
+  },
+  "Bryansk": {
+    "name": "Брянская область",
+    "peoples": []
+  },
+  "Kursk": {
+    "name": "Курская область",
+    "peoples": []
+  },
+  "Belgorod": {
+    "name": "Белгородская область",
+    "peoples": []
+  },
+  "Voronezh": {
+    "name": "Воронежская область",
+    "peoples": []
+  },
+  "Rostov": {
+    "name": "Ростовская область",
+    "peoples": []
+  },
+  "Buryat": {
+    "name": "Республика Бурятия",
+    "peoples": []
+  },
+  "Tuva": {
+    "name": "Республика Тыва",
+    "peoples": []
+  },
+  "Chita": {
+    "name": "Забайкальский край",
+    "peoples": []
+  },
+  "Amur": {
+    "name": "Амурская область",
+    "peoples": []
+  },
+  "Yevrey": {
+    "name": "Еврейская автономная область",
+    "peoples": []
+  },
+  "Khabarovsk": {
+    "name": "Хабаровский край",
+    "peoples": []
+  },
+  "Primorye": {
+    "name": "Приморский край",
+    "peoples": []
+  },
+  "Tyumen": {
+    "name": "Тюменская область",
+    "peoples": []
+  },
+  "Kurgan": {
+    "name": "Курганская область",
+    "peoples": []
+  },
+  "Omsk": {
+    "name": "Омская область",
+    "peoples": []
+  },
+  "Novosibirsk": {
+    "name": "Новосибирская область",
+    "peoples": []
+  },
+  "Chelyabinsk": {
+    "name": "Челябинская область",
+    "peoples": []
+  },
+  "Altay": {
+    "name": "Алтайский край",
+    "peoples": []
+  },
+  "Orenburg": {
+    "name": "Оренбургская область",
+    "peoples": []
+  },
+  "Saratov": {
+    "name": "Саратовская область",
+    "peoples": []
+  },
+  "Astrakhan": {
+    "name": "Астраханская область",
+    "peoples": []
+  },
+  "Volgograd": {
+    "name": "Волгоградская область",
+    "peoples": []
+  },
+  "Crimea": {
+    "name": "Республика Крым",
+    "peoples": []
+  },
+  "Magadan": {
+    "name": "Магаданская область",
+    "peoples": []
+  },
+  "Sakhalin": {
+    "name": "Сахалинская область",
+    "peoples": []
+  },
+  "Sevastopol": {
+    "name": "Город Севастополь",
+    "peoples": []
+  },
+  "Yamal-Nenets": {
+    "name": "Ямало-Ненецкий автономный округ",
+    "peoples": []
+  },
+  "Nenets": {
+    "name": "Ненецкий автономный округ",
+    "peoples": []
+  },
+  "SakhaYakutia": {
+    "name": "Республика Саха (Якутия)",
+    "peoples": []
+  },
+  "StPetersburg": {
+    "name": "Город Санкт-Петербург",
+    "peoples": []
+  },
+  "Arkhangelsk": {
+    "name": "Архангельская область",
+    "peoples": []
+  },
+  "Krasnoyarsk": {
+    "name": "Красноярский край",
+    "peoples": []
+  },
+  "Kalmyk": {
+    "name": "Республика Калмыкия",
+    "peoples": []
+  },
+  "Kamchatka": {
+    "name": "Камчатский край",
+    "peoples": []
+  },
+  "Bashkortostan": {
+    "name": "Республика Башкортостан",
+    "peoples": [
+      "Башкиры"
+    ]
+  },
+  "Sverdlovsk": {
+    "name": "Свердловская область",
+    "peoples": []
+  },
+  "Khanty-Mansiy": {
+    "name": "Ханты-Мансийский автономный округ — Югра",
+    "peoples": []
+  },
+  "Lipetsk": {
+    "name": "Липецкая область",
+    "peoples": []
+  },
+  "Tambov": {
+    "name": "Тамбовская область",
+    "peoples": []
+  },
+  "Tomsk": {
+    "name": "Томская область",
+    "peoples": []
+  },
+  "Tatarstan": {
+    "name": "Республика Татарстан",
+    "peoples": [
+      "Татары"
+    ]
+  },
+  "Ulyanovsk": {
+    "name": "Ульяновская область",
+    "peoples": []
+  },
+  "Penza": {
+    "name": "Пензенская область",
+    "peoples": []
+  },
+  "Kemerovo": {
+    "name": "Кемеровская область",
+    "peoples": []
+  },
+  "Orel": {
+    "name": "Орловская область",
+    "peoples": []
+  },
+  "Irkutsk": {
+    "name": "Иркутская область",
+    "peoples": []
+  },
+  "Khakass": {
+    "name": "Республика Хакасия",
+    "peoples": []
+  },
+  "Mordovia": {
+    "name": "Республика Мордовия",
+    "peoples": []
+  },
+  "Kaluga": {
+    "name": "Калужская область",
+    "peoples": []
+  },
+  "Kostroma": {
+    "name": "Костромская область",
+    "peoples": []
+  },
+  "Yaroslavl": {
+    "name": "Ярославская область",
+    "peoples": []
+  },
+  "Vladimir": {
+    "name": "Владимирская область",
+    "peoples": []
+  },
+  "Ryazan": {
+    "name": "Рязанская область",
+    "peoples": []
+  },
+  "Ivanovo": {
+    "name": "Ивановская область",
+    "peoples": []
+  },
+  "Nizhegorod": {
+    "name": "Нижегородская область",
+    "peoples": []
+  },
+  "Tula": {
+    "name": "Тульская область",
+    "peoples": []
+  },
+  "Chuvash": {
+    "name": "Республика Чувашия",
+    "peoples": []
+  },
+  "Vologda": {
+    "name": "Вологодская область",
+    "peoples": []
+  },
+  "Novgorod": {
+    "name": "Новгородская область",
+    "peoples": []
+  },
+  "Tver": {
+    "name": "Тверская область",
+    "peoples": []
+  },
+  "Moskovskaya": {
+    "name": "Московская область",
+    "peoples": []
+  },
+  "Moskva": {
+    "name": "Город Москва",
+    "peoples": []
+  },
+  "Mariy-El": {
+    "name": "Республика Марий Эл",
+    "peoples": []
+  },
+  "Kirov": {
+    "name": "Кировская область",
+    "peoples": []
+  },
+  "Udmurt": {
+    "name": "Удмуртская Республика",
+    "peoples": []
+  },
+  "Komi": {
+    "name": "Республика Коми",
+    "peoples": []
+  },
+  "Perm": {
+    "name": "Пермский край",
+    "peoples": []
+  },
+  "Samara": {
+    "name": "Самарская область",
+    "peoples": []
+  },
+  "Stavropol": {
+    "name": "Ставропольский край",
+    "peoples": []
+  },
+  "Adygey": {
+    "name": "Республика Адыгея",
+    "peoples": []
+  },
+  "Chukotka": {
+    "name": "Чукотский автономный округ",
+    "peoples": []
+  }
+}

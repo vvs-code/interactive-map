@@ -1,0 +1,56 @@
+.maps {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1000px;
+  transform: translate(-50%, -50%);
+}
+
+.maps-wrapper {
+  position: relative;
+}
+
+.map {
+  z-index: 2;
+  position: absolute;
+  opacity: 0.7;
+  width: 87.3049%;
+  top: -2.5%;
+  left: 1.4%;
+  stroke: #333;
+
+  path {
+    &.current {
+      fill: #ffcb1d !important;
+    }
+
+    &.empty {
+      opacity: 0.3;
+    }
+  }
+
+  a {
+    path {
+      fill: #fffb;
+
+      &:hover {
+        fill: #ffebc4ba;
+      }
+    }
+
+    &:visited {
+      path {
+        fill: #fffb;
+
+        &:hover {
+          fill: #ffebc4ba;
+        }
+      }
+    }
+  }
+}
+
+.undermap {
+  opacity: 0;
+  width: 100%;
+}
