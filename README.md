@@ -5,9 +5,9 @@
 Результат можно посмотреть по адресу:
 <a href="https://map.vvscode.ru">map.vvscode.ru</a>
 
-> Веселов Владислав (@vvs-code) \
-> Максим Кирилюк (@werserk) \
-> Никита Романов
+> Веселов Владислав (<a href="https://github.com/vvs-code">@vvs-code</a>) \
+> Максим Кирилюк (<a href="https://github.com/werserk">@werserk</a>) \
+> Никита Романов (<a href="https://github.com/KARTASAR">@KARTASAR</a>)
 
 ## Стек
 
