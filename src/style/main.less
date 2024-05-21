@@ -113,6 +113,37 @@ img {
   //pointer-events: none;
 }
 
+.reglink {
+  position: relative;
+}
+
+.currentreg {
+  position: fixed;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.reglabel {
+  //display: none;
+  position: fixed;
+  left: 50%;
+  top: 0;
+  padding: 5px 10px;
+  background-color: #fff;
+  border-radius: 1000px;
+}
+
+.reglink path:hover {
+  & + .reglabel {
+    display: block;
+  }
+}
+
 @import "map";
 @import "region";
 @import "people";

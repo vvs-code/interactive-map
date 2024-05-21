@@ -7,7 +7,7 @@ import Map from "../Map";
 import {GlobalContext} from "../../index";
 
 export default function Layout(props: { children: any }) {
-    const {currentRegion} = useContext(GlobalContext);
+    const {currentRegion, curreg} = useContext(GlobalContext);
 
     return (
         <>
@@ -34,6 +34,7 @@ export default function Layout(props: { children: any }) {
             <div>
                 <main className="main">
                     <div className="main-wrapper">
+                        <div className="currentreg">{curreg}</div>
                         <Map/>
                         {props.children}
                     </div>

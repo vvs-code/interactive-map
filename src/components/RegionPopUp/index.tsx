@@ -45,11 +45,16 @@ export default function RegionPopUp(props: { region: string }) {
             </div>
 
             <div className="region-popup__peoples">
-                {populationDict[currentRegion]?.filter((people) => peoplesDict[people[0]])?.map((people, i) => {
+                {populationDict[currentRegion]?.map((people, i) => {
+                    if (!peoplesDict[people[0]]) {
+                        return <div className="region-popup__people">
+                            {i + 1}. <span>{peoplesDict?.[people[0]]?.name ?? people[0]}</span> ({FormatPopulation(people[1] ?? 0)}, {Math.round(people[2] * 10) / 10}%)
+                        </div>
+                    }
                     return <div className="region-popup__people">
-                        {i + 1}. <Link className="text-link" to={`/${props.region}/${people[0]}`}>{peoplesDict?.[people[0]]?.name ?? people[0]}</Link> ({FormatPopulation(people[1] ?? 0)})
+                        {i + 1}. <Link className="text-link" to={`/${props.region}/${people[0]}`}>{peoplesDict?.[people[0]]?.name ?? people[0]}</Link> ({FormatPopulation(people[1] ?? 0)}, {Math.round(people[2] * 10) / 10}%)
                     </div>
-                })}
+                }).splice(0, 25)}
             </div>
         </div>
     )

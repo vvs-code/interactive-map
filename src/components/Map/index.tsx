@@ -7,7 +7,7 @@ import {useMatch} from "react-router-dom";
 type coord = [number, number];
 
 export default function Map() {
-    const { loaded, currentRegion, populationDict, peoplesDict } = useContext(GlobalContext);
+    const { loaded, currentRegion, populationDict, peoplesDict, regionsDict, setGlobalCurreg } = useContext(GlobalContext);
 
     useEffect(() => {
         const MAPS: HTMLDivElement = document.querySelector('.maps');
@@ -96,6 +96,11 @@ export default function Map() {
             }
         });
 
+        const allPaths = Array.from(document.querySelectorAll('path'));
+
+        allPaths.forEach(el => el.addEventListener('mouseover', () => setGlobalCurreg(regionsDict[el.attributes['name']['value']].name)));
+        allPaths.forEach(el => el.addEventListener('mouseout', () => setGlobalCurreg('')));
+
         RunMove();
     }, [loaded]);
 
@@ -111,6 +116,20 @@ export default function Map() {
         });
         document.querySelector('path[name="' + currentRegion + '"]')?.classList?.add('current');
     }, [currentRegion, populationDict, peoplesDict]);
+
+    // useEffect(() => {
+    //     if (JSON.stringify(regionsDict) === '{}') {
+    //         return;
+    //     }
+    //
+    //     Array.from(document.querySelectorAll('.reglink')).forEach((el) => {
+    //         const label = document.createElement('div');
+    //         label.classList.add('reglabel');
+    //         console.dir(el.querySelector('path'));
+    //         label.textContent = regionsDict[el.querySelector('path').attributes['name']['value']]?.name;
+    //         el.appendChild(label);
+    //     });
+    // }, [regionsDict]);
 
     return (
         <div className="maps">

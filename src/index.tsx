@@ -17,6 +17,8 @@ export const GlobalContext = createContext({
     populationDict: {},
     currentRegion: '',
     currentPeople: '',
+    curreg: '',
+    setGlobalCurreg: (val: string) => {},
     setGlobalCurrentRegion: (val: string) => {},
     setGlobalCurrentPeople: (val: string) => {},
 });
@@ -28,27 +30,29 @@ function GlobalContextProvider(props: { children?: any }) {
     const [populationDict, setPopulationDict] = useState({});
     const [currentRegion, setCurrentRegion] = useState('');
     const [currentPeople, setCurrentPeople] = useState('');
+    const [curreg, setCurreg] = useState('');
 
     const setGlobalCurrentRegion = (val: string) => setCurrentRegion(val);
     const setGlobalCurrentPeople = (val: string) => setCurrentPeople(val);
+    const setGlobalCurreg = (val: string) => setCurreg(val);
 
     useEffect(() => {
         Promise.all([
-            fetch('/json/regions.json')
+            fetch('/json/regions.json?12312')
                 .then((res) => res.json())
                 .then(
                     (response) => {
                         setRegionsDict(response);
                     }
                 ),
-            fetch('/json/peoples.json')
+            fetch('/json/peoples.json?123321')
                 .then((res) => res.json())
                 .then(
                     (response) => {
                         setPeoplesDict(response);
                     }
                 ),
-            fetch('/json/population.json')
+            fetch('/json/population.json?12313')
                 .then((res) => res.json())
                 .then(
                     (response) => {
@@ -61,7 +65,7 @@ function GlobalContextProvider(props: { children?: any }) {
     }, []);
 
     return (
-        <GlobalContext.Provider value={{ loaded, regionsDict, peoplesDict, populationDict, currentRegion, currentPeople, setGlobalCurrentRegion, setGlobalCurrentPeople }}>
+        <GlobalContext.Provider value={{ loaded, regionsDict, peoplesDict, populationDict, currentRegion, currentPeople, setGlobalCurrentRegion, setGlobalCurrentPeople, curreg, setGlobalCurreg }}>
             {props.children}
         </GlobalContext.Provider>
     )
